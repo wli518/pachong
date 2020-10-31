@@ -47,8 +47,8 @@ def getinfo(tick):
 
     print(mydic)
 
-    labelStr=",".join(mydic.keys())
-    valueStr=",".join(mydic.values())
+    labelStr=";".join(mydic.keys())
+    valueStr=";".join(mydic.values())
     print(labelStr)
     print(valueStr)
 
