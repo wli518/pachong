@@ -125,8 +125,5 @@ class MyTest(unittest.TestCase):
 if __name__ == '__main__':
     test = unittest.TestSuite()
     test.addTest(MyTest('testetf'))
-
-    file_handler = open("test_report","wb")
-    runner = HTMLTestRunner(stream=file_handler, title='test report', description='test cases')
+    runner = HTMLTestRunner(stream=None, title='', description='')
     runner.run(test)
-    file_handler.close()
